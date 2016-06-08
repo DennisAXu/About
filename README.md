@@ -22,15 +22,15 @@ Facilitating the server-client interaction between a web server and UE4 Blueprin
 #Getting Started
 
 ### 1) Download and setup the server
-1. Clone `helios-server`from our Github https://github.com/cs210/helios-server onto your server (AWS, Digital Ocean, etc.).
+1. Clone `HeliosServer`from our Github https://github.com/HeliosOrg/HeliosServer onto your server (AWS, Digital Ocean, etc.).
 2. Install Node on this computer if you haven’t already.
-3. Run `npm install .` in the `helios-server` folder.
+3. Run `npm install .` in the `HeliosServer` folder.
 4. Run `npm install forever -g`
 
 ### 2) Set up the JSON file
 The Helios SDI nodes in both the client (Blueprints) and the server (in this case, a node server) are generated from an `input.json` file as follows:
 	
-1. In the `input.json` file inside the `helios-server` folder, specify the name (in upper camel case) and type (`int`, `bool`, `FString`, or `float`) of each variable you want to create a simple interface in UE4. These names will correspond to both your server endpoints as well as the node headers in your Blueprints client. 
+1. In the `input.json` file inside the `HeliosServer` folder, specify the name (in upper camel case) and type (`int`, `bool`, `FString`, or `float`) of each variable you want to create a simple interface in UE4. These names will correspond to both your server endpoints as well as the node headers in your Blueprints client. 
 2. Add your server URL to the start of `input.json`
 
 ```
@@ -60,15 +60,18 @@ The Helios SDI nodes in both the client (Blueprints) and the server (in this cas
 
 ```
 3. Run `node createServer.js` This creates a server.js file that you can then fire up by running `forever server.js` or `npm server.js`
-4. Make a copy of your `input.json` file and move it to the `helios-server` folder into the `helios-plugin` folder.
 
 
 ### 3) Download and setup the UE4 Plugin
 ************ @Derin or @Ryan, please fill this part in ************
 
-1. How to Install the Helios SDI plugin into your UE4 Game
+1. Clone `HeliosPlugin`from our Github https://github.com/HeliosOrg/HeliosPlugin into your `Plugins` folder inside your UE4 project folder.
+2. Make a copy of your `input.json` file and move it from the `HeliosServer` folder into the `HeliosPlugin` folder.
 
 ************ @Derin or @Ryan, please fill this part in ************
+### 4) Use the Blueprint nodes in your UE4 project
+1. Right-click within a Blueprints Event Graph and type in the name of whatever variable you wish to GET or SET. For example, for the `DecalColor` variable, there are two types of nodes, `Get DecalColor` and `Set DecalColor`.
+2. Use these Blueprint nodes to GET and SET your variables!
 
 #More Details
 ######How are the nodes automatically generated?
@@ -92,5 +95,4 @@ Sending and retrieving data to and from an external server that you control is a
 | ![Derin Dutz profile](http://i.imgur.com/Y36vNH9.png) | ![Dennis Xu profile](http://i.imgur.com/txhQ4W2.png) | ![Ash Ngu profile](http://i.imgur.com/Lc5IIkR.png) | ![Ryan Davies profile](http://i.imgur.com/a7XueIR.png) |
 |:---:|:---:|:---:|:---:|
 | Derin Dutz | Dennis Xu | Ash Ngu | Ryan Davies |
-
 
