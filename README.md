@@ -1,11 +1,5 @@
 ![helios banner](http://i.imgur.com/S16v4Ux.png)
 
-### The Team
-
-| ![Derin Dutz profile](http://i.imgur.com/Y36vNH9.png) | ![Dennis Xu profile](http://i.imgur.com/txhQ4W2.png) | ![Ash Ngu profile](http://i.imgur.com/Lc5IIkR.png) | ![Ryan Davies profile](http://i.imgur.com/a7XueIR.png) |
-|:---:|:---:|:---:|:---:|
-| Derin Dutz | Dennis Xu | Ash Ngu | Ryan Davies |
-
 #Simple Data Integration in UE4 by Helios
 Integrating external data sources (i.e Twitter's API, data from an AWS server) into UE4 can be a real hassle for even the most experienced of developers. And for developers who primarily use Blueprints visual-scripting to build applications, this hassle becomes a near impossibility. More often than not, developers well-versed in handling web requests via simple AJAX calls must write vanilla C++ in UE4 to replicate the same functionality. Yuck!
 
@@ -92,4 +86,11 @@ Sending and retrieving data to and from an external server that you control is a
  
 ######Implications for Virtual Reality
  
+ 
+### The Team
+
+| ![Derin Dutz profile](http://i.imgur.com/Y36vNH9.png) | ![Dennis Xu profile](http://i.imgur.com/txhQ4W2.png) | ![Ash Ngu profile](http://i.imgur.com/Lc5IIkR.png) | ![Ryan Davies profile](http://i.imgur.com/a7XueIR.png) |
+|:---:|:---:|:---:|:---:|
+| Derin Dutz | Dennis Xu | Ash Ngu | Ryan Davies |
+
 
