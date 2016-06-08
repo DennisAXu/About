@@ -69,15 +69,24 @@ The Helios SDI nodes in both the client (Blueprints) and the server (in this cas
 2. Make a copy of your `input.json` file and move it from the `HeliosServer` folder into the `HeliosPlugin` folder.
 3. Add an empty C++ class to your UE4 project. File > New C++ Class. Choose None as your parent class. This adds a number of files and folders to your project folder.
 4. Open the `Source` folder in your project. Then open the folder titled with your project name, in our case this folder is called `HeliosFinal`. Open up the file with `Build.cs` in its name, i.e. for us this is `HeliosFinal.Build.cs`. Inside this file, add `"SimpleDataIntegration"` to the following line: `PrivateDependencyModuleNames.AddRange(new string[] { "SimpleDataIntegration" });`
-5. Open `DefaultEngine.ino` and add ```
-[Plugins]
-+EnabledPlugins=SimpleDataIntegration``` to the bottom of your file.
+5. Open `DefaultEngine.ino` and add to the `[Plugins]` section like so:
+
+`[Plugins]
++EnabledPlugins=SimpleDataIntegration`
 
 ************ @Derin or @Ryan, please fill this part in ************
 ### 4) Use the Blueprint nodes in your UE4 project
 Sending and retrieving data to and from an external server that you control is as easy as dragging out the appropriate getter or setter node into Blueprints.
+1. Restart your project if it is open.
 1. Right-click within a Blueprints Event Graph and type in the name of whatever variable you wish to GET or SET. For example, for the `DecalColor` variable, there are two types of nodes, `Get DecalColor` and `Set DecalColor`.
-2. Use these Blueprint nodes to GET and SET your variables!
+2. Select the appropriate Blueprint nodes and use them to GET and SET your variables!
+
+An example of pulling from the server: Event Tick > Delay (0.3) > Get DecalColor
+[Screenshot]
+
+An example of posting to the server:
+Keyboard Event 1 > Set DecalColor ("green")
+
 
 #More Details
 ######How are the nodes automatically generated?
