@@ -7,19 +7,21 @@
 | Derin Dutz | Dennis Xu | Ash Ngu | Ryan Davies |
 
 #Simple Data Integration in UE4 by Helios
-Integrating external data sources (i.e the twitter API, data from an AWS server, etc.) into your UE4 client can be a real hassle for even the most experienced of developers. And for those of us who primarily use Blueprints visual-scripting to build our applications, this hassle becomes a near impossibility. More often than not, developers well versed in handling web requests via simple AJAX calls must resort to writing vanilla C++ in UE4 to replicate the same functionality.
+Integrating external data sources (i.e Twitter's API, data from an AWS server) into UE4 can be a real hassle for even the most experienced of developers. And for developers who primarily use Blueprints visual-scripting to build applications, this hassle becomes a near impossibility. More often than not, developers well-versed in handling web requests via simple AJAX calls must write vanilla C++ in UE4 to replicate the same functionality. Yuck!
 
 [insert code snippet showing an attempt at making a web request to Twitter’s API using vanilla C++]
 
-Yuck! Enter the **Helios Simple Data Integration (SDI) Plugin**.
+Enter the **Helios Simple Data Integration (SDI) Plugin**.
 
 The **Helios SDI Plugin** allows you to integrate external data into your UE4 client by interfacing directly with a web server using auto-generated Blueprints nodes (no more ugly C++ code!). With it, you can do things like:
 
--Control an in-game experience via an internet-connected device (e.g. changing lighting, weather, etc.) such as an iPad
--Send data to server, to be consumed by a separate client (e.g. web app showing heat-maps of kill locations, live match-tracking tickers, etc.)
--Communicate with external APIs such as Twitter, Facebook, Youtube, etc. from inside your UE4 client
+- Control an in-game experience via an internet-connected device (e.g. changing lighting, weather, etc.) such as an iPad
 
-Facilitating the server-client interaction between a web server and UE4 Blueprints is critical for developers who want to enrich their in-game experience by pulling in (or pushing out) data sources external to UE4. Helios SDI allows you to do this without writing a line of C++!
+- Send data to server, to be consumed by a separate client (e.g. web app showing heat-maps of kill locations, live match-tracking tickers, etc.)
+
+- Communicate with external APIs such as Twitter, Facebook, Youtube, etc. from inside your UE4 client
+
+Facilitating the server-client interaction between a web server and UE4 Blueprints is critical for developers who want to enrich their in-game experience by pulling in (or pushing out) data sources external to UE4. The Helios SDI Plugin allows you to do this without ever writing a line of C++!
 
 [Attach an example of using Helios SDI nodes in blueprints for each of the above examples]
 
