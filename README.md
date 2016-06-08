@@ -40,20 +40,20 @@ The Helios SDI nodes in both the client (Blueprints) and the server (in this cas
   "server_url": "http://ec2-54-100-240-19.us-west-1.compute.amazonaws.com/helios/",
   "single_instance_variables": [
     {
-      "name": "DecalColor",
-      "type":"FString" 
+      "name": "IsLightOn",
+      "type":"bool" 
     },
     {
-      "name": "Score",
+      "name": "NumKills",
       "type":"int"
     },
     {
-      "name": "ClintonHit",
-      "type": "bool"
+      "name": "UserName",
+      "type": "FString"
     },
     {
-      "name": "TrumpHit",
-      "type": "bool"
+      "name": "WinPercentage",
+      "type": "float"
     }
   ]
 }
