@@ -70,7 +70,6 @@ The Helios SDI nodes in both the client (Blueprints) and the server (in this cas
 3. Add an empty C++ class to your UE4 project. File > New C++ Class. Choose None as your parent class. This adds a number of files and folders to your project folder.
 4. Open the `Source` folder in your project. Then open the folder titled with your project name, in our case this folder is called `HeliosFinal`. Open up the file with `Build.cs` in its name, i.e. for us this is `HeliosFinal.Build.cs`. Inside this file, add `"SimpleDataIntegration"` to the following line: `PrivateDependencyModuleNames.AddRange(new string[] { "SimpleDataIntegration" });`
 5. Open `DefaultEngine.ino` in the project's `Config` folder and add to the `[Plugins]` section like so:
-
 `[Plugins]
 +EnabledPlugins=SimpleDataIntegration`
 
