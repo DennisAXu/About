@@ -83,7 +83,7 @@ When you right-click within a Blueprint’s ‘Event Graph’, a dropdown menu o
 
 Helios nodes appear under the Networking section of this dropdown.
 
-###### Using the pluging with third party servers
+###### Using the plugin with third party servers
 
  
 ######Implications for virtual reality
