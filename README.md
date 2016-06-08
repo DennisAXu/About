@@ -67,6 +67,8 @@ The Helios SDI nodes in both the client (Blueprints) and the server (in this cas
 
 1. Clone `HeliosPlugin`from our Github https://github.com/HeliosOrg/HeliosPlugin into your `Plugins` folder inside your UE4 project folder.
 2. Make a copy of your `input.json` file and move it from the `HeliosServer` folder into the `HeliosPlugin` folder.
+3. Add an empty C++ class to your UE4 project. File > New C++ Class. Choose None as your parent class. This adds a number of files and folders to your project folder.
+4. Open the `Source` folder in your project. Then open the folder titled with your project name, in our case this folder is called `HeliosFinal`. Open up the file with `Build.cs` in its name, i.e. for us this is `HeliosFinal.Build.cs`. Inside this file, add `"SimpleDataIntegration"` to the following line: `PrivateDependencyModuleNames.AddRange(new string[] { "SimpleDataIntegration" });`
 
 ************ @Derin or @Ryan, please fill this part in ************
 ### 4) Use the Blueprint nodes in your UE4 project
