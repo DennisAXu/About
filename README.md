@@ -59,7 +59,7 @@ The Helios SDI nodes in both the client (Blueprints) and the server (in this cas
 }
 
 ```
-3. Run `node createServer.js` This creates a server.js file that you can then fire up by running `forever server.js` or `npm server.js`
+3. Run `node createServer.js` This creates a server.js file that you can then fire up by running `forever server.js` or `node server.js`
 
 
 ### 3) Download and setup the UE4 Plugin
