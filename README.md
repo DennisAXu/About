@@ -6,7 +6,7 @@
 |:---:|:---:|:---:|:---:|
 | Derin Dutz | Dennis Xu | Ash Ngu | Ryan Davies |
 
-#Ridiculously Simple Data Integration in UE4 by Helios
+#Simple Data Integration in UE4 by Helios
 Integrating external data sources (i.e the twitter API, data from an AWS server, etc.) into your UE4 client can be a real hassle for even the most experienced of developers. And for those of us who primarily use Blueprints visual-scripting to build our applications, this hassle becomes a near impossibility. More often than not, developers well versed in handling web requests via simple AJAX calls must resort to writing vanilla C++ in UE4 to replicate the same functionality.
 
 [insert code snippet showing an attempt at making a web request to Twitter’s API using vanilla C++]
