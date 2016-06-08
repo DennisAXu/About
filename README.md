@@ -27,7 +27,7 @@ Facilitating the server-client interaction between a web server and UE4 Blueprin
 3. Run `npm install .` in the `helios-server` folder.
 4. Run `npm install forever -g`
 
-### 2. Set up the JSON file
+### 2) Set up the JSON file
 The Helios SDI nodes in both the client (Blueprints) and the server (in this case, a node server) are generated from an `input.json` file as follows:
 	
 1. In the `input.json` file inside the `helios-server` folder, specify the name (in upper camel case) and type (`int`, `bool`, `FString`, or `float`) of each variable you want to create a simple interface in UE4. These names will correspond to both your server endpoints as well as the node headers in your Blueprints client. 
@@ -63,7 +63,7 @@ The Helios SDI nodes in both the client (Blueprints) and the server (in this cas
 4. Make a copy of your `input.json` file and move it to the `helios-server` folder into the `helios-plugin` folder.
 
 
-### 3. Download and setup the UE4 Plugin
+### 3) Download and setup the UE4 Plugin
 ************ @Derin or @Ryan, please fill this part in ************
 
 1. How to Install the Helios SDI plugin into your UE4 Game
