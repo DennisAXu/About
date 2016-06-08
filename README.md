@@ -13,7 +13,7 @@ The **Helios SDI Plugin** allows you to integrate external data into your UE4 cl
 
 - Send data to server, to be consumed by a separate client (e.g. web app showing heat-maps of kill locations, live match-tracking tickers, etc.)
 
-- Communicate with external APIs such as Twitter, Facebook, Youtube, etc. from inside your UE4 client
+- Communicate with third-party APIs such as Twitter, Facebook, Youtube, etc. from inside your UE4 client
 
 Facilitating the server-client interaction between a web server and UE4 Blueprints is critical for developers who want to enrich their in-game experience by pulling in (or pushing out) data sources external to UE4. The Helios SDI Plugin allows you to do this without ever writing a line of C++!
 
@@ -70,6 +70,7 @@ The Helios SDI nodes in both the client (Blueprints) and the server (in this cas
 
 ************ @Derin or @Ryan, please fill this part in ************
 ### 4) Use the Blueprint nodes in your UE4 project
+Sending and retrieving data to and from an external server that you control is as easy as dragging out the appropriate getter or setter node into Blueprints.
 1. Right-click within a Blueprints Event Graph and type in the name of whatever variable you wish to GET or SET. For example, for the `DecalColor` variable, there are two types of nodes, `Get DecalColor` and `Set DecalColor`.
 2. Use these Blueprint nodes to GET and SET your variables!
 
@@ -82,10 +83,8 @@ When you right-click within a Blueprint’s ‘Event Graph’, a dropdown menu o
 
 Helios nodes appear under the Networking section of this dropdown.
 
-######Using Helios nodes
-Sending and retrieving data to and from an external server that you control is as easy as dragging out the appropriate getter or setter node into Blueprints.
+###### Using the Plugin with Third Party Servers
 
-[show setter and corresponding getter node in Blueprints]
  
 ######Implications for Virtual Reality
  
