@@ -77,9 +77,10 @@ The Helios SDI nodes in both the client (Blueprints) and the server (in this cas
 ************ @Derin or @Ryan, please fill this part in ************
 ### 4) Use the Blueprint nodes in your UE4 project
 Sending and retrieving data to and from an external server that you control is as easy as dragging out the appropriate getter or setter node into Blueprints.
+
 1. Restart your project if it is open.
-1. Right-click within a Blueprints Event Graph and type in the name of whatever variable you wish to GET or SET. For example, for the `DecalColor` variable, there are two types of nodes, `Get DecalColor` and `Set DecalColor`.
-2. Select the appropriate Blueprint nodes and use them to GET and SET your variables!
+2. Right-click within a Blueprints Event Graph and type in the name of whatever variable you wish to GET or SET. For example, for the `DecalColor` variable, there are two types of nodes, `Get DecalColor` and `Set DecalColor`.
+3. Select the appropriate Blueprint nodes and use them to GET and SET your variables!
 
 An example of pulling from the server: Event Tick > Delay (0.3) > Get DecalColor
 [Screenshot]
