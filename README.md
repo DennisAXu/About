@@ -61,7 +61,6 @@ The Helios SDI nodes in both the client (Blueprints) and the server (in this cas
 
 
 ### 3) Download and setup the UE4 Plugin
-************ @Derin or @Ryan, please fill this part in ************
 
 1. Clone `HeliosPlugin`from our Github https://github.com/HeliosOrg/HeliosPlugin into your `Plugins` folder inside your UE4 project folder.
 2. Make a copy of your `input.json` file and move it from the `HeliosServer` folder into the `HeliosPlugin` folder.
@@ -74,7 +73,6 @@ The Helios SDI nodes in both the client (Blueprints) and the server (in this cas
 +EnabledPlugins=SimpleDataIntegration`
 ![default_engine](http://i.imgur.com/TOSyWpg.png)
 
-************ @Derin or @Ryan, please fill this part in ************
 ### 4) Use the Blueprint nodes in your UE4 project
 Sending and retrieving data to and from an external server that you control is as easy as dragging out the appropriate getter or setter node into Blueprints.
 
